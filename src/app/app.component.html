@@ -1,0 +1,87 @@
+<!-- <div class="container">
+  <div class="jumbotron">
+    <div style="width:80%;">
+      <h2>{{title}}</h2>
+      <nav [ngClass]="'menu'">
+        <a routerLink="viewtask" routerLinkActive="active-link">View Task</a> |
+        <a routerLink="addtask" routerLinkActive="active-link">Add Task</a> |
+        <a [routerLink]="['/edittask',0]" routerLinkActive="active-link">Update Task</a>
+      </nav>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div> -->
+<div class="jumbotron">
+<div class='container-fluid'>
+
+    <div class='row'>
+
+        <div class='col-sm-3'>
+
+<div class='main-nav'>  
+
+  <div class='navbar navbar-inverse'>  
+
+      <div class='navbar-header'>  
+
+          <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>  
+
+              <span class='sr-only'>Toggle navigation</span>  
+
+              <span class='icon-bar'></span>  
+
+              <span class='icon-bar'></span>  
+
+              <span class='icon-bar'></span>  
+
+          </button>  
+
+          <a class='navbar-brand' [routerLink]="['/viewtask']">Task Manager</a>  
+
+      </div>  
+
+      <div class='clearfix'></div>  
+
+      <div class='navbar-collapse collapse'>  
+
+          <ul class='nav navbar-nav'>  
+
+              <li [routerLinkActive]="['link-active']">  
+
+                  <a [routerLink]="['/addtask']">  
+
+                      <span class='glyphicon glyphicon-home'></span> Add Task  
+
+                  </a>  
+
+              </li>  
+
+              <li [routerLinkActive]="['link-active']">  
+
+                <a [routerLink]="['/viewtask']">  
+
+                    <span class='glyphicon glyphicon-th-list'></span> View Task  
+                    
+                </a>  
+
+            </li>  
+
+          </ul>  
+
+      </div>  
+     
+  </div>  
+  
+</div>
+</div>
+
+<div class='col-sm-9 body-content'>
+
+    <router-outlet></router-outlet>
+
+</div>
+
+</div>
+
+</div>
+</div>

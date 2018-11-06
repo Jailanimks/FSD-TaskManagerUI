@@ -1,0 +1,53 @@
+table.formatHTML5 {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  color: #606060;
+}
+
+table.formatHTML5 td {
+  vertical-align: middle;
+  padding: 0.5em;
+}
+
+table.formatHTML5 thead tr td {
+  background-color: White;
+  vertical-align: middle;
+  padding: 0.6em;
+  font-size: 0.8em;
+}
+
+table.formatHTML5 thead tr th,
+table.formatHTML5 tbody tr.separator {
+  padding: 0.5em;
+  background-color: #909090;
+  background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#ababab));
+  background: -moz-linear-gradient(top, #909090, #ababab);
+  color: #efefef;
+}
+
+table.formatHTML5 tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+table.formatHTML5 tbody tr:nth-child(even) {
+  background-color: #efefef;
+}
+
+table.formatHTML5 tbody tr:last-child {
+  border-bottom: solid 1px #404040;
+}
+
+table.formatHTML5 tbody tr:hover {
+  cursor: pointer;
+  background-color: #909090;
+  background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#ababab));
+  background: -moz-linear-gradient(top, #909090, #ababab);
+  color: #dadada;
+}
+
+table.formatHTML5 tfoot {
+  text-align: center;
+  color: #303030;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+}
